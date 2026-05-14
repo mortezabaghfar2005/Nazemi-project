@@ -187,3 +187,34 @@ ul{
     transition: all 0.3s ease-in-out;
 
 }
+
+/*  Hero  */
+
+.hero {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 60px 60px;
+  background-color: var(--primary);
+}
+
+.hero__text-title{
+    color: var(--lightText);
+    font-size: 64px;
+    line-height: 75px;
+    font-family: "Suwannaphum";
+}
+
+.highlight{
+    color: var(--secondary);
+    font-size: 64px;
+    line-height: 75px;
+    font-family: "Allura";
+}
+
+.hero__text-detailes{
+    line-height: 30px;
+    color: var(--lightText);
+    font-size: 18px;
+    font-family: "Manrope-Medium";
+}

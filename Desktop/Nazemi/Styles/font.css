@@ -9,3 +9,16 @@
     src: url("./Fonts/Manrope/manrope-medium.otf") format("truetype");
     font-weight: 500;
 }
+
+@font-face {
+    font-family: "Suwannaphum";
+    src: url("./Fonts/Suwannaphum/Suwannaphum-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Allura";
+    src: url("./Fonts/Allura/Allura-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
