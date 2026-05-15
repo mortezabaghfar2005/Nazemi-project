@@ -11,14 +11,51 @@
 }
 
 @font-face {
+    font-family: "Manrope-Regular";
+    src: url("./Fonts/Manrope/manrope-regular.otf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
     font-family: "Suwannaphum";
     src: url("./Fonts/Suwannaphum/Suwannaphum-Black.ttf") format("truetype");
     font-weight: 900;
 }
 
 @font-face {
+    font-family: "Suwannaphum-Bold";
+    src: url("./Fonts/Suwannaphum/Suwannaphum-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
     font-family: "Allura";
     src: url("./Fonts/Allura/Allura-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./Fonts/Inter/Inter-Medium.ttf") format("truetype");
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("./Fonts/Inter/Inter-Bold.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url("./Fonts/Inter/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("./Fonts/Inter/Inter-Regular.ttf") format("truetype");
     font-weight: 400;
 }
 

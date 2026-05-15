@@ -218,3 +218,243 @@ ul{
     font-size: 18px;
     font-family: "Manrope-Medium";
 }
+
+/*  Brands  */
+
+.logo-bar-section {
+  background-color: var(--primary);
+  padding: 40px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.logo-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.logo-item:hover img {
+  filter: grayscale(0%); 
+  transform: scale(1.1);
+}
+
+
+.logo-item img {
+  max-height: 40px; 
+  width: auto;
+  object-fit: contain;
+   filter: grayscale(100%); 
+  transition: filter 0.3s ease, transform 0.3s ease; 
+}
+
+.testimonials-section {
+  background-color: var(--primary); 
+  color: #ffffff;
+  padding: 60px 20px;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.watermark {
+  font-family: "Allura"; 
+  font-size: 64px;
+  color: rgba(255, 100, 50, 0.3);
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/*  testimonials  */
+
+
+.testimonials-header h2 {
+  font-size: 40px;
+  margin: 0 0 15px 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Suwannaphum-Bold";
+}
+
+.testimonials-header p {
+  color: #cccccc;
+  margin: 0 auto;
+  line-height: 35px;
+  font-size: 20px;
+  font-family: "Manrope";
+margin-top: -25px;
+}
+
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  padding-left: 35px;
+  overflow-x: auto; 
+  padding-bottom: 20px; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.testimonials-container::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.testimonial-card {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  padding: 30px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.review-card {
+  flex: 0 0 545px;
+  min-width: 545px;
+  border-radius: 16px; 
+  border: none;
+}
+
+.review-card:nth-child(2)::before,
+.review-card:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  
+  background: linear-gradient(
+    135deg, 
+    #FFFAFA 0%,      
+    #000000 30%,     
+    #000000 65%,     
+    #FFFAFA 100%     
+  );
+  
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.review-card.active {
+  position: relative;
+}
+
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 0 0 341px;  
+  min-width: 341px;
+}
+
+.google-logo-main {
+  width: 40px;
+}
+
+.stars {
+  color: #FFC107; 
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.main-stars {
+  font-size: 2rem;
+}
+
+.rating-text {
+  color: var(--lightText);
+  font-family: "Inter";
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500px;
+}
+
+.rating-text strong {
+  color: #EED79B;
+  font-family: "Inter-Bold";
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.user-details{
+    margin-left: -8px;
+}
+
+.user-details h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  font-family: "Inter-SemiBold";
+}
+
+.user-details .date {
+  color: rgba(253, 250, 242, 0.28);
+  font-size: 16px;
+  font-family: "Inter-Regular";
+}
+
+.google-icon-small {
+  width: 24px;
+}
+
+.review-text {
+  color: var(--lightText);
+  line-height: 20px;
+  font-size: 16px;
+  margin: 0;
+  font-family: "Inter-Regular";
+}

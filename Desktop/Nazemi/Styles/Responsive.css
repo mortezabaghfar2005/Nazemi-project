@@ -2,6 +2,18 @@
     .nav__item-link{
         font-size: 12px;
     }
+
+    .hero__text-title{
+        font-size: 30px;
+    }
+
+    .hero__text-detailes{
+        font-size: 11px;
+    }
+
+    .img{
+        width: 450px;
+    }
 }
 
 @media (max-width:992px) {
@@ -43,17 +55,59 @@
         flex-direction: column;
     }
 
+    .hero__text-title{
+        font-size: 64px;
+    }
+
+    .hero__text-detailes{
+        font-size: 18px;
+    }
+
+    .img{
+        width: 699px;
+    }
+
+    .logo-container {
+    justify-content: flex-start;
+  }
+  
+  .logo-item {
+    width: calc(33.33% - 20px); 
+  }
+
+  .logo-item img {
+    max-width: 100%; 
+  }
+
 }
 
 @media (max-width:768px) {
 
     .header__container{
-        gap: 100px;
+        gap: 25px;
         justify-content: center;
     }
 
     .header__center{
          gap: 50px;
+    }
+
+    .hero__text-title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .highlight{
+        font-size: 32px;
+    }
+
+    .hero__text-detailes{
+        font-size: 13px;
+        line-height: 35px;
+    }
+
+    .img{
+        width: 500px;
     }
 }
 
@@ -63,8 +117,43 @@
     }  
     
     .header__container{
-        gap: 20px;
-        justify-content: center;
+        padding: 20px;
+    }
+
+    .img{
+        width: 400px;
+    }
+
+    .hero__text-title{
+        font-size: 29px;
+        line-height: 36px;
+    }
+
+    .highlight{
+        font-size: 29px;
+    }
+
+    .hero__text-detailes{
+        font-size: 10px;
+        line-height: 35px;
+    }
+
+    .watermark{
+        top: -15px;
+        font-size: 40px;
+    }
+
+    .testimonials-header h2{
+        font-size: 18px;
+        font-family: "Suwannaphum";
+        font-weight: 400px;
+    }
+
+    .testimonials-header p {
+        font-size: 14px;
+        font-family: "Manrope-Regular";
+        line-height: 21px;
+        margin-top: -15px;
     }
 }
 
@@ -90,5 +179,30 @@
 
     .header__center{
         gap: 35px;
+    }
+
+    .img{
+        width: 300px;
+    }
+
+    .hero{
+        margin-top: -45px;
+    }
+
+    .hero__text-title{
+        font-size: 23px;
+        line-height: 25px;
+        margin-left: -80px;
+    }
+
+    .hero__text-detailes{
+        font-size: 6px;
+        line-height: 20px;
+        margin-left: -80px;
+    }
+
+    .highlight{
+        font-size: 23px;
+        line-height: 20px;
     }
 }
