@@ -348,6 +348,7 @@ margin-top: -25px;
   border: none;
 }
 
+
 .review-card:nth-child(2)::before,
 .review-card:nth-child(3)::before {
   content: "";
@@ -374,14 +375,18 @@ margin-top: -25px;
   position: relative;
 }
 
+.reviews-wrapper {
+  display: contents; 
+}
+
 .summary-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex: 0 0 341px;  
-  min-width: 341px;
+  flex: 0 0 340px;  
+  min-width: 340px;
 }
 
 .google-logo-main {
@@ -457,4 +462,482 @@ margin-top: -25px;
   font-size: 16px;
   margin: 0;
   font-family: "Inter-Regular";
+}
+
+/*  Slider  */
+
+.recent-content-section {
+  padding: 80px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary);
+      margin-top: -50px;
+}
+
+/* Header Styles */
+.section-header {
+  text-align: center;
+  margin-bottom: 100px;
+  color: var(--lightText);
+}
+
+.section-header h2 {
+  color: var();
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.arrow-icon {
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.section-header p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+/* Slider Styles */
+.slider-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.slide {
+  width: 430px;
+    height: 570px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  margin: 0 -30px; 
+  z-index: 1;
+  opacity: 0.5;
+  filter: brightness(0.4);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: brightness(1.2); 
+  transition: filter 0.4s ease;
+}
+
+
+.slide.active {
+  transform: scale(1.15); 
+  z-index: 2;
+  opacity: 1;
+  filter: brightness(1);
+  width: 440px;
+    height: 650px;
+}
+
+.slide.active img{
+  filter: brightness(1);
+}
+
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.slide.active .play-btn {
+  opacity: 1;
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 16px solid var(--accent-color);
+  margin-left: 4px;
+}
+
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+      margin-top: 70px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav-btn:hover {
+  
+}
+
+
+
+.progress-indicator {
+  position: absolute;
+  left: 33%; 
+  top: 0;
+  width: 33%;
+  height: 100%;
+  background-color: var(--secondary);
+  transition: left 0.3s ease;
+}
+.progress-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.progress-line {
+  width: 35px;
+  height: 4px;
+  background-color: #444; 
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.progress-line.active {
+  background-color: var(--secondary); 
+}
+
+
+.user{
+  background-color: var(--primary);
+}
+
+.user-person{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  gap: 15px; 
+      margin-top: -40px;
+
+}
+
+.user__person-details{
+  margin-left: -5px;
+  color: #fff;
+}
+
+.user__person-details h3{
+  margin-bottom: 4px;
+   font-family: "Manrope-Regular";
+font-weight: 400;
+}
+
+.date__person{
+  color: #595959;
+   font-family: "Manrope-Regular";
+font-weight: 400;
+}
+
+.user__title{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 8px;
+}
+
+.user__title h2{
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--lightText);
+  font-family: "Suwannaphum-Bold";
+}
+
+.user__title p{
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--lightText);
+  font-family: "Manrope-Medium";
+  margin-top: -20px;
+}
+
+/*  Carts  */
+
+.carts{
+  background-color: var(--primary);
+  padding-top: 40px;
+
+}
+
+#name-cart{
+  font-family: "Suwannaphum";
+  font-size: 18px;
+  color: var(--lightText);
+}
+
+#p-cart{
+  font-family: "Manrope-Regular";
+  font-size: 10px;
+}
+
+#carts{
+
+}
+
+/*  Profile Comparison  */
+
+
+.profile-comparison-section {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #fff;
+  overflow: hidden;
+  background-color: var(--primary);
+  margin-top: -100px;
+}
+
+.comparison-slider-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.comparison-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.comparison-track {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.comparison-slide {
+  flex: 0 0 calc(33.333% - 20px);
+  min-width: 430px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-header {
+  position: relative;
+      margin-bottom: -20px;
+  padding-left: 10px;
+}
+
+
+
+.comparison-header h3 {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  font-family: "Manrope-Medium";
+  line-height: 30px;
+    color: var(--lightText);
+}
+
+.profile-card {
+  background-color: #222;
+  border-radius: 20px;
+  padding: 25px 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+.profile-stats {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 15px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.stat-item strong {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-bottom p{
+  
+}
+
+.real-name{
+  font-family: "Manrope-Regular";
+  font-weight: 400;
+  color: #595959;
+}
+
+.job-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.light-text {
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.connection-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; 
+  position: relative;
+}
+
+
+.comparison-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.comp-nav-btn {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.comp-nav-btn:hover {
+  color: #fff;
+}
+
+.comp-progress-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.comp-progress-line {
+  width: 40px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.comp-progress-line.active {
+  background-color: #ff5722; 
+}
+
+.watermark__cart-before{
+  font-family: "Allura";
+    font-size: 40px;
+    color: rgba(255, 100, 50, 0.3);
+    position: absolute;
+    top: -20px;
+    pointer-events: none;
+    line-height: 85px;
+    left: 2px;
+}
+
+.profession{
+  font-size: 11px;
+  margin-top: -10px;
+}
+
+.username{
+  font-size: 12px;
+  color: #fff;
+}
+
+.connection-arrow{
+  margin-top: -35px;
+}
+
+.watermark__cart-after{
+  font-family: "Allura";
+    font-size: 40px;
+    color: rgba(255, 100, 50, 0.3);
+    position: absolute;
+    top: -20px;
+    pointer-events: none;
+    line-height: 85px;
+    left: 2px;
 }

@@ -79,6 +79,15 @@
     max-width: 100%; 
   }
 
+  .review-card{
+    flex:  0 0 340px;
+    min-width: 340px;
+  }
+
+  .review-text{
+    font-size: 15px;
+  }
+
 }
 
 @media (max-width:768px) {
@@ -155,7 +164,42 @@
         line-height: 21px;
         margin-top: -15px;
     }
+
+    .user__title{
+        text-align: center;
+    }
+
+    .user__title h2{
+  font-size: 18px;
 }
+
+.user__title p{
+  font-size: 12px;
+  line-height: 21px;
+}
+
+.profile-card {
+    width: 340px;
+    min-width: 340px; 
+    margin: 0 auto;
+}
+
+.profile-name{
+    font-size: 10px;
+}
+
+.card-top{
+    gap: 40px;
+}
+
+.stat-item strong, span{
+    font-size: 10px;
+}
+
+.comparison-track{
+    gap: 0;
+}
+
 
 @media (max-width:480px) {
 
@@ -205,4 +249,86 @@
         font-size: 23px;
         line-height: 20px;
     }
+
+     .testimonials-container {
+    display: flex;
+    flex-direction: column; 
+    overflow-x: visible; 
+    gap: 30px; 
+  }
+
+  .summary-card {
+    min-width: 300px;
+    flex: 0 0 0;
+    margin-left: -38px;
+  }
+
+  .reviews-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px; 
+    padding-bottom: 20px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    margin-left: -38px;
+  }
+
+  .reviews-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .review-card {
+    flex: 0 0 300; 
+    min-width: 300px; 
+    width: auto;
+  }
+
+  .section-header{
+    margin-bottom: 0;
+  }
+
+  .section-header h2 {
+  font-size: 18px;
+  line-height: 36px;
+  margin: 0 0 10px 0;
+}
+.section-header p {
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: -12px;
+}
+
+  .slide { width: 200px; height: 280px; margin: 0 -20px; }
+  .slider-container { height: 350px; }
+
+  #prevBtn, #nextBtn {
+    display: none !important;
+  }
+
+  .slide.active {
+    width: 420px !important;
+    height: 280px !important;
+    transform: scale(1) !important; 
+  }
+
+  .profile-comparison-section {
+    margin-top: 0;
+  }
+
+  .comparison-header{
+    margin-left: 60px;
+  }
+  .comparison-slide{
+    margin-left: -40px;
+  }
+
+  #name-cart{
+    font-size: 16px;
+  }
+
+  .arrow-icon{
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+}
 }
