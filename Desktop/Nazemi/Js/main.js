@@ -169,3 +169,41 @@ document.addEventListener("DOMContentLoaded", function () {
     // تنظیم حالت اولیه
     updateProgress();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".comparison-slider-container");
+    const prevBtn = document.getElementById("compPrevBtn");
+    const nextBtn = document.getElementById("compNextBtn");
+    const progressLines = document.querySelectorAll(".comp-progress-line");
+
+    // عرض تقریبی هر اسلاید برای اسکرول
+    const scrollAmount = 400;
+
+    if (prevBtn && nextBtn) {
+        nextBtn.addEventListener("click", () => {
+            container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+            updateProgress(1);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+            updateProgress(-1);
+        });
+    }
+
+    // آپدیت کردن نوار پیشرفت بر اساس اسکرول یا کلیک (بسیار ساده‌شده)
+    let currentIndex = 0;
+    function updateProgress(direction) {
+        progressLines[currentIndex].classList.remove("active");
+        currentIndex += direction;
+
+        if (currentIndex >= progressLines.length)
+            currentIndex = progressLines.length - 1;
+        if (currentIndex < 0) currentIndex = 0;
+
+        progressLines[currentIndex].classList.add("active");
+    }
+
+    // در حالت موبایل/تبلت که فلش‌ها نیستند، می‌توانید از رویداد اسکرول کانتینر
+    // برای آپدیت نوار پیشرفت استفاده کنید (IntersectionObserver روش بهتری است).
+});
