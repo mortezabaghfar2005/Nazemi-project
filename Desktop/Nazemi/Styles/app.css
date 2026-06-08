@@ -88,6 +88,10 @@ ul{
     transition: all 0.3s ease;
 }
 
+#csp-active{
+   color: var(--secondary) !important;
+}
+
 
 
 /*  Header Button  */
@@ -777,7 +781,7 @@ font-weight: 400;
 
 .comparison-track {
   display: flex;
-  gap: 30px;
+  gap: 80px;
   padding-bottom: 20px;
 }
 
@@ -1358,7 +1362,7 @@ position: absolute;
 
 .cr-section {
   background-color: #121212;
-  padding: 80px 20px;
+  padding: 0 20px;
   font-family: sans-serif;
 }
 
@@ -2025,3 +2029,785 @@ position: absolute;
   line-height: 30px;
   font-family: "Manrope-Medium";
 }
+
+.csp-filter-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    gap: 12px; 
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.csp-filter-btn {
+    background-color: transparent;
+    color: var(--lightText); 
+    border: 1px solid #595959; 
+    border-radius: 8px; 
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Manrope-Regular";
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.csp-filter-btn:hover,
+.csp-filter-btn.active {
+    background-color: #1a1a1a;
+    border-color: #555;
+    color: #ffffff;
+}
+
+
+#header{
+    background-image: url("../Images/Rectangle\ 10.png");
+}
+
+#header__container{
+  background-color: transparent;
+}
+
+.scs-hero-content {
+    max-width: 1400px;
+    margin-top: 40px;
+    padding: 50px 150px;
+}
+
+.scs-badge {
+    background-color: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: "Manrope-Medium";
+    display: inline-block;
+    margin-bottom: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.scs-title {
+     font-family: "Suwannaphum-Bold";
+    font-size: 40px;
+    color: var(--lightText);
+    margin: 0 0 20px 0;
+}
+
+.scs-description {
+    color: var(--lightText);
+    font-family: "Manrope-Regular";
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+
+.scs-info-box {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: flex-start;
+}
+
+.scs-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.scs-info-label {
+    color: #A7A9BE;
+    font-size: 14px;
+    font-family: "Manrope-Medium";
+    
+}
+
+.scs-info-value {
+    color: var(--lightText);
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+/* تنظیمات تگ main (در صورت نیاز به استایل‌دهی کلی) */
+.scs-main-content {
+    display: block;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+/* تنظیمات کلی سکشن توضیحات */
+.scs-details-section {
+    padding: 60px 20px;
+    background-color: transparent; 
+}
+
+/* کانتینر اصلی */
+.scs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* بلوک‌های متنی */
+.scs-text-block {
+    margin-bottom: 40px;
+}
+
+/* عنوان‌ها (About Project, Our Role) */
+.scs-heading {
+    font-size: 24px;
+    color: var(--lightText);
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-family: "Suwannaphum-Bold";
+}
+
+/* پاراگراف‌ها */
+.scs-paragraph {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--lightText);
+    margin: 0;
+    font-family: "Manrope-Regular";
+}
+
+/* نگهدارنده تصویر */
+.scs-image-wrapper {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* استایل تصویر */
+.scs-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.scs-section-block {
+    margin-top: 80px; 
+        padding: 0 130px;
+}
+
+/* ساختار منعطف برای قرارگیری دو عکس کنار هم */
+.scs-image-row {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* استایل عکس‌های این ردیف */
+.scs-row-image {
+         max-width: 590px;
+     flex: 1;
+     width: 100%;
+    height: auto;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.scs-gallery-section {
+    max-width: 1200px; /* هم‌عرض با باکس هیرو */
+    margin: 80px auto; /* فاصله از بالا و پایین و وسط‌چین کردن */
+    padding: 0; /* فاصله امن از کناره‌ها برای موبایل */
+}
+
+.scs-gallery-title {
+    color: #ffffff; /* رنگ متن عنوان */
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.scs-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ایجاد ۳ ستون با عرض مساوی */
+    gap: 24px; /* فاصله بین عکس‌ها */
+}
+
+.scs-gallery-img {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* حفظ تناسب ابعاد عکس‌ها (عرض به ارتفاع) */
+    object-fit: cover; /* جلوگیری از دفرمه شدن عکس‌ها */
+    border-radius: 20px; /* گردی گوشه‌های عکس */
+    display: block;
+}
+
+/* =========================================
+   Single Case Study - Other Projects
+========================================= */
+
+.scs-other-projects {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.scs-op-heading {
+    color: var(--lightText);
+    font-size: 28px;
+    font-family: "Suwannaphum-Bold";
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.scs-op-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px; /* فاصله ردیف‌ها 40px و فاصله ستون‌ها 30px */
+}
+
+.scs-op-card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scs-op-img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.scs-op-label {
+    color: var(--secondary); /* رنگ نارنجی */
+    font-size: 13px;
+    margin-bottom: -12px;
+    font-family: "Manrope-Medium";
+}
+
+.scs-op-title {
+    color: var(--lightText);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.scs-op-desc {
+    color: var(--lightText);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1; /* این باعث می‌شود دکمه‌ها در یک راستا قرار بگیرند */
+}
+
+.scs-op-link {
+    display: inline-flex;
+    align-items: center;
+    color: #F9FAFC;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    width: fit-content;
+    transition: opacity 0.3s ease;
+    border: 1px solid #1C1C1C;
+    background-color: #1C1C1C;
+    padding: 4px 0 4px 16px;
+    border-radius: 25px;
+
+}
+
+.scs-op-link:hover {
+    color: #ffffff;
+}
+
+.scs-op-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #ff5e00;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+.sp-container {
+  background-color: var(--primary);
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* --- بخش بالایی (گرید برای ویدیو و اطلاعات) --- */
+.sp-hero-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* نسبت عرض ویدیو به باکس اطلاعات */
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* --- استایل‌های ویدیو --- */
+.sp-video-box {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sp-video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.sp-play-center-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s;
+}
+
+.sp-play-center-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sp-play-center-btn svg {
+    width: 30px;
+    height: 30px;
+    color: #000;
+    margin-left: 5px; /* برای وسط چین شدن بصری مثلث */
+}
+
+/* نوار کنترل پایین ویدیو */
+.sp-video-controls {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    padding: 20px 20px 10px 20px;
+}
+
+.sp-progress-bar {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.sp-progress-filled {
+    width: 35%; /* میزان پر شدن ویدیو */
+    height: 100%;
+    background-color: #ff0000; /* رنگ قرمز مشابه یوتیوب */
+}
+
+.sp-controls-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.sp-controls-left, .sp-controls-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sp-icon {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sp-time {
+    font-size: 12px;
+    color: #ddd;
+    margin-left: 5px;
+}
+
+/* --- استایل‌های باکس اطلاعات (راست) --- */
+.sp-info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.sp-badge {
+    align-self: flex-start;
+    background-color: rgba(255, 255, 255, 0.22);
+    color: #fff;
+    font-family: "Manrope-Medium";
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.sp-title {
+  font-family: "Suwannaphum-Bold";
+  color: var(--lightText);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.sp-description {
+    color: var(--lightText);
+    font-family: "Manrope-Regular";
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+}
+
+/* باکس مشخصات (تیره) */
+.sp-meta-grid {
+    background-color: #222222; /* رنگ پس‌زمینه باکس مشابه عکس */
+    border-radius: 12px;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: auto; /* هول دادن باکس به پایین */
+}
+
+.sp-meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.sp-meta-label {
+    color: #A7A9BE;
+    font-family: "Manrope-Medium";
+    font-size: 13px;
+}
+
+.sp-meta-value {
+  font-family: "Manrope";
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* --- بخش پایینی: درباره پروژه --- */
+.sp-about-box {
+    background-color: #222222;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.sp-about-title {
+    font-family: "Suwannaphum-Bold";
+    color: var(--lightText);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.sp-about-text {
+  font-family: "Manrope-Regular";
+    color: #EEF6FF;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+#scs-other-projects{
+  max-width: 1500px;
+}
+
+
+
+.cu-container {
+    margin: 0 auto;
+    padding: 60px 40px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: #ffffff;
+    background-color: #111111; /* رنگ پس‌زمینه کل صفحه */
+}
+
+.cu-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+}
+
+.cu-header-text{
+  text-align: center;
+}
+
+/* --- سمت چپ --- */
+.cu-left-side {
+    display: flex;
+    flex-direction: column;
+        margin-top: -30px;
+}
+
+.cu-subtitle {
+  line-height: 75px;
+    color: rgba(255, 100, 50, 0.3);
+    font-size: 64px;
+    font-family: "Allura";
+    position: absolute;
+    left: 23%;
+    margin-top: 5px;
+    transform: translateX(-50%);
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.cu-title {
+    color: var(--lightText);
+    font-size: 40px;
+    font-family: "Suwannaphum-Bold";
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.cu-description {
+    color: var(--lightText);
+    font-family: "Manrope-Regular";
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-size: 15px;
+        margin-top: -20px;
+
+}
+
+/* باکس اطلاعات تماس */
+.cu-info-card {
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    border-radius: 16px;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cu-info-title {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    font-family: "Suwannaphum-Bold";
+    color: var(--lightText);
+}
+
+.cu-info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.cu-info-item {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: fit-content;
+    gap: 10px;
+}
+
+.cu-info-text {
+    font-size: 14px;
+    color: var(--lightText);
+    font-family: "Manrope-Medium";
+}
+
+.cu-socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.cu-social-label {
+    font-size: 14px;
+    color: var(--lightText);
+    font-family: "Manrope-Regular";
+}
+
+.cu-social-icon {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* --- سمت راست (فرم) --- */
+.cu-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cu-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cu-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--lightText);
+    font-family: "Manrope-Regular";
+}
+
+.cu-required {
+    color: #ff5722;
+}
+
+.cu-label-hint {
+    color: #666;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.cu-contact-visual-block {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden; /* برای جلوگیری از بیرون زدن عکس از گوشه‌های گرد */
+    background-color: #111; /* رنگ پس‌زمینه در صورت کوتاه بودن عکس */
+    
+}
+
+.cu-visual-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1; /* قرار گرفتن زیر باکس */
+    object-fit: cover;
+    opacity: 0.8; /* تنظیم وضوح عکس */
+}
+
+/* فیلدهای متنی */
+.cu-input, .cu-textarea {
+    background-color: transparent;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #fff;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.cu-input:focus, .cu-textarea:focus {
+    outline: none;
+    border-color: #ff5722;
+}
+
+.cu-textarea {
+    resize: vertical;
+}
+
+/* دکمه‌های انتخابی (Radio & Checkbox) */
+.cu-choices-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cu-choice-btn {
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* مخفی کردن اینپوت اصلی */
+.cu-choice-btn input {
+    display: none;
+}
+
+/* استایل دادن به متن به عنوان دکمه */
+.cu-choice-btn span {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #a3a3a3;
+    transition: all 0.3s ease;
+}
+
+/* استایل هنگام انتخاب شدن (Checked) */
+.cu-choice-btn input:checked + span {
+    border-color: #ff5722;
+    color: #fff;
+    background-color: rgba(255, 87, 34, 0.1);
+}
+
+.cu-choice-btn:hover span {
+    border-color: #666;
+}
+
+.cu-review-link {
+    color: #FF5B14;
+    font-family: "Manrope-Regular";
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* دکمه سابمیت */
+.cu-submit-btn {
+    background-color: var(--secondary);
+    font-family: "Suwannaphum-Bold";
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.cu-submit-btn:hover {
+    background-color: #e64a19;
+}
+

@@ -14,6 +14,10 @@
     .img{
         width: 450px;
     }
+
+    .scs-image-row {
+        flex-direction: column; /* عکس‌ها زیر هم قرار می‌گیرند */
+    }
 }
 
 @media (max-width:992px) {
@@ -254,6 +258,37 @@
   .contact-pills {
     justify-content: flex-start;
   }
+  .csp-filter-container {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    .csp-filter-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    .scs-image-row {
+        flex-direction: column; /* عکس‌ها زیر هم قرار می‌گیرند */
+    }
+    .scs-section-block{
+      padding: 0;
+    }
+    .scs-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .sp-hero-wrapper {
+        grid-template-columns: 1fr; /* زیر هم قرار گرفتن ویدیو و اطلاعات */
+    }
+    .sp-video-box {
+        aspect-ratio: 16/9; /* حفظ تناسب ویدیو در موبایل */
+    }
+     .cu-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .cu-subtitle{
+      left: 50%;
+    }
 }
 
 @media (max-width:768px) {
@@ -329,6 +364,32 @@
     line-height: 21px;
     font-weight: 400;
   }
+    .scs-info-box {
+        flex-direction: column; /* زیر هم قرار گرفتن تمام بخش‌ها */
+        align-items: center; /* وسط‌چین کردن کل باکس */
+        text-align: center; /* وسط‌چین کردن متن‌ها */
+        padding: 40px 20px;
+        gap: 30px; /* فاصله عمودی بین آیتم‌های مختلف (Year, Industry و ...) */
+    }
+
+    .scs-info-item {
+        width: 100%; /* استفاده از تمام عرض */
+        display: flex;
+        flex-direction: column; /* قرار گرفتن لیبل (مثل Year) بالای مقدار (مثل 2025) */
+        align-items: center;
+        gap: 15px; /* فاصله بین عنوان و مقدار در هر آیتم */
+    }
+    .scs-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .scs-gallery-section {
+        margin: 50px auto;
+    }
+    .scs-op-grid {
+        grid-template-columns: 1fr; /* تبدیل به یک ستون در موبایل */
+    }
 }
 
 @media (max-width:576px) {
@@ -407,9 +468,6 @@
     font-size: 10px;
 }
 
-.comparison-track{
-    gap: 0;
-}
 
 .bg-text{
   font-size: 40px;
@@ -568,9 +626,7 @@
   .comparison-header{
     margin-left: 60px;
   }
-  .comparison-slide{
-    margin-left: -40px;
-  }
+  
 
   #name-cart{
     font-size: 16px;
@@ -751,5 +807,101 @@
   .services-icons{
     gap: 28px;
   }
+  .csp-filter-container {
+        gap: 8px; 
+        width: 350px;
+    }
+    .csp-filter-btn {
+        padding: 8px 14px;
+        font-size: 12px; 
+    }
+
+    .scs-hero-content{
+      margin-top: 0;
+      display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -130px;
+    }
+
+    .scs-badge{
+      font-size: 12px;
+    }
+
+    .scs-title{
+      font-size: 20px;
+    }
+
+    .scs-description{
+      font-size: 8px;
+    }
+
+    .scs-info-box{
+      width: 300px;
+    }
+
+    .scs-heading{
+      font-size: 18px;
+    }
+
+    .scs-paragraph{
+      font-size: 11px;
+    }
+    .sp-meta-grid {
+        grid-template-columns: 1fr; /* در موبایل خیلی کوچک اطلاعات تک ستونه میشود */
+        gap: 15px;
+    }
+    .sp-controls-right {
+        display: none; /* مخفی کردن آیکون های اضافی ویدیو در موبایل برای جلوگیری از بهم ریختگی */
+    }
+     .cu-title {
+        font-size: 36px;
+    }
+    .cu-info-card {
+        padding: 30px 20px;
+    }
+    .cu-choice-btn span {
+        width: 100%;
+        text-align: center;
+    }
+    .cu-choices-container {
+        flex-direction: column;
+    }
+
+    .cu-subtitle{
+      font-size: 40px;
+      left: 45%;
+    }
+
+    .cu-title{
+         font-size: 18px;
+            margin-top: 40px;
+    }      
+    
+    .cu-description{
+          font-size: 9px;
+    margin-top: -4px;
+    }
+
+    .cu-info-title{
+      font-size: 14px;
+    }
+    .cu-info-text{
+      font-size: 10px;
+    }
+
+    .cu-label{
+      font-size: 13px;
+}
+.cu-submit-btn{
+  padding: 6px;
+}
+.faq-section{
+  padding: 0 20px;
+}
+.connection-arrow svg{
+  height: 60px;
+  width: 35px;
+}
 }
 }
